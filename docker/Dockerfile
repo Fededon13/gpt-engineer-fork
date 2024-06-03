@@ -1,16 +1,17 @@
 # Stage 1: Builder stage
-FROM python:3.11-alpine AS builder
+FROM python:3.11 AS builder
 
-RUN apk update && apk add --no-cache tk tcl curl
+RUN apt update && apt install tk tcl curl cmake -y
 
 WORKDIR /app
 
 COPY . .
 
+RUN pip install langchain-community
 RUN pip install --no-cache-dir -e .
 
 # Stage 2: Final stage
-FROM python:3.11-alpine
+FROM python:3.11
 
 WORKDIR /app
 
