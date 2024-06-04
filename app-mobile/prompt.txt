@@ -1,0 +1,4 @@
+Create a fintech mobile application for Argentina that allows users to make money transfers instantly and securely. 
+The application must have an intuitive and attractive user interface, adapted to the Argentine market. 
+Additionally, you must implement robust security measures to protect users' personal and financial information. 
+The application must offer innovative functionalities that differentiate it from the competition, such as the possibility of making investments or requesting loans.
